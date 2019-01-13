@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetails">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                style="@style/titleFont"
+                android:id="@+id/etBookName"
+                android:text="Book Name"
+                android:inputType="textMultiLine"/>
+        </TableRow>
+        <TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="233dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:contentDescription="Book photo" />
+
+                <LinearLayout
+                    android:layout_width="189dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/normalFont"
+                        android:id="@+id/txtBookId"
+                        android:text="Book ID"/>
+
+                    <EditText
+                        android:id="@+id/etBookId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Book ID" />
+
+                    <TextView
+                        style="@style/normalFont"
+                        android:id="@+id/txtISBN"
+                        android:text="ISBN"/>
+
+                    <EditText
+                        android:id="@+id/etISBN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ISBN" />
+
+                    <TextView
+                        style="@style/normalFont"
+                        android:id="@+id/txtCategory"
+                        android:text="Category"/>
+
+                    <EditText
+                        android:id="@+id/etCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Category" />
+
+                    <TextView
+                        style="@style/normalFont"
+                        android:id="@+id/txtAuthor"
+                        android:text="Author"/>
+
+                    <EditText
+                        android:id="@+id/etAuthor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Author" />
+
+                    <TextView
+                        style="@style/normalFont"
+                        android:id="@+id/txtStock"
+                        android:text="Stock"/>
+
+                    <EditText
+                        android:id="@+id/etStock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stock" />
+
+                    <TextView
+                        style="@style/normalFont"
+                        android:id="@+id/txtPrice"
+                        android:text="Price"/>
+
+                    <EditText
+                        android:id="@+id/etPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Price" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+        s
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt">
+
+            <Button
+                style="@style/button"
+                android:id="@+id/button"
+                android:text="@string/update" />
+        </TableRow>
+    </TableLayout>
+</android.widget.RelativeLayout>
